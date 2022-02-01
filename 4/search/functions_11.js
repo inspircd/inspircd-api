@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['read_1887',['Read',['../class_server_config.html#a879a82d00463214b89be04be32a3e78d',1,'ServerConfig']]],
+  ['readconfig_1888',['ReadConfig',['../class_module.html#a793782034272562b25f93b7a5b972513',1,'Module']]],
+  ['readstring_1889',['readString',['../class_config_tag.html#ada9345bed1e94e7ccdf7f59ab4ca9c7e',1,'ConfigTag']]],
+  ['recoverfromfork_1890',['RecoverFromFork',['../class_socket_engine.html#a2059b324687d9d669fd0b0c0f7c32868',1,'SocketEngine']]],
+  ['recv_1891',['Recv',['../class_socket_engine.html#a61a809e61ca4c1e386bd10d19cf0adf9',1,'SocketEngine']]],
+  ['recvfrom_1892',['RecvFrom',['../class_socket_engine.html#af87542567acde22303401b4c14f0c731',1,'SocketEngine']]],
+  ['register_1893',['Register',['../class_extension_manager.html#ab955029279bd6d4b011ddc7db43447f0',1,'ExtensionManager']]],
+  ['registeredusercount_1894',['RegisteredUserCount',['../class_user_manager.html#ab899f0029467e2f85946e351ab04d940',1,'UserManager']]],
+  ['registerfactory_1895',['RegisterFactory',['../class_x_line_manager.html#ab30c7427f10d97c24bf6a7e18ad8883d',1,'XLineManager']]],
+  ['registerservice_1896',['RegisterService',['../class_service_provider.html#aed77d91b39d5df569be84172e50e4cc4',1,'ServiceProvider::RegisterService()'],['../class_command.html#abfea9d0cd8f74d1e16c733f6ef9d6708',1,'Command::RegisterService()'],['../class_extension_item.html#abd27476943038870cd94342626795f21',1,'ExtensionItem::RegisterService()'],['../class_mode_handler.html#aed02d09521769955ab83c6983fb264c1',1,'ModeHandler::RegisterService()']]],
+  ['rehash_1897',['Rehash',['../class_insp_i_r_cd.html#a3aad7e6eb07094aa3f6edbba1b3d1d50',1,'InspIRCd']]],
+  ['rehashclonecounts_1898',['RehashCloneCounts',['../class_user_manager.html#ae593f5c04e3e33e47e593804537a705a',1,'UserManager']]],
+  ['remove_1899',['Remove',['../class_token_list.html#a3d052df67af7e07143b766dacf3f0da3',1,'TokenList']]],
+  ['removeclonecounts_1900',['RemoveCloneCounts',['../class_user_manager.html#a856c75fc342befd33ba9928b9fda7e61',1,'UserManager']]],
+  ['removecommand_1901',['RemoveCommand',['../class_command_parser.html#a2d3c5995f2cd122b66ff9be652be04d6',1,'CommandParser']]],
+  ['removeentries_1902',['RemoveEntries',['../class_ban_cache_manager.html#a6a5570cba4d841b0561ace1cef71ed43',1,'BanCacheManager']]],
+  ['removemode_1903',['RemoveMode',['../class_list_mode_base.html#a79b72d7be72ccf49b76c82988cd16feb',1,'ListModeBase::RemoveMode()'],['../class_mode_handler.html#a503ca6f0510826107d906214912f1d37',1,'ModeHandler::RemoveMode(User *user)'],['../class_mode_handler.html#a222306154c3aff8d87fb480e7cf85578',1,'ModeHandler::RemoveMode(Channel *channel, Modes::ChangeList &amp;changelist)'],['../class_prefix_mode.html#ac6160a203a547c11c3faab0843da4ee4',1,'PrefixMode::RemoveMode()']]],
+  ['replaceparam_1904',['ReplaceParam',['../class_client_protocol_1_1_message.html#a87239b8ce2b276b334df8165fb4347cd',1,'ClientProtocol::Message::ReplaceParam(size_t index, const char *str)'],['../class_client_protocol_1_1_message.html#a67ef5bf267b29afaf2cfbde82cd75cf6',1,'ClientProtocol::Message::ReplaceParam(size_t index, const std::string &amp;str)']]],
+  ['replaceparamref_1905',['ReplaceParamRef',['../class_client_protocol_1_1_message.html#a1d2276fb03423f4f6c3aa40c22988f58',1,'ClientProtocol::Message']]],
+  ['resetiohookprovider_1906',['ResetIOHookProvider',['../class_listen_socket.html#a387991784c3eb898d797f060f35f61fc',1,'ListenSocket']]],
+  ['resolvemodeconflict_1907',['ResolveModeConflict',['../class_mode_handler.html#a3d39ce501d3a53574f2a15bb6b0995c6',1,'ModeHandler']]],
+  ['result_1908',['Result',['../class_cullable_1_1_result.html#a269cfed9a748947742da95cdd061bf94',1,'Cullable::Result']]],
+  ['routedescriptor_1909',['RouteDescriptor',['../class_route_descriptor.html#a58badea75a110bb751459efe0d0dd386',1,'RouteDescriptor']]],
+  ['run_1910',['Run',['../class_action_list.html#a9d515cbdfb900caa960536c7f091b1fa',1,'ActionList::Run()'],['../class_insp_i_r_cd.html#abc64f3334b927cc3add0a639c8cac6ba',1,'InspIRCd::Run()']]]
+];

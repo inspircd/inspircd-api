@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['targettype_2380',['TargetType',['../class_message_target.html#a91b283d5dbebff3ebc955ee07759b5ff',1,'MessageTarget']]],
-  ['type_2381',['Type',['../class_stream_socket.html#a33cfcc8a4b5fc91094ff99a9da4af33a',1,'StreamSocket']]]
+  ['status_0',['Status',['../class_s_s_l_i_o_hook.html#a97db59ac45801055187f734d1ac6ea6f',1,'SSLIOHook']]]
 ];

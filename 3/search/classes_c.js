@@ -1,7 +1,28 @@
 var searchData=
 [
-  ['nick_1302',['Nick',['../struct_client_protocol_1_1_messages_1_1_nick.html',1,'ClientProtocol::Messages']]],
-  ['nosuchchannel_1303',['NoSuchChannel',['../class_numerics_1_1_no_such_channel.html',1,'Numerics']]],
-  ['nosuchnick_1304',['NoSuchNick',['../class_numerics_1_1_no_such_nick.html',1,'Numerics']]],
-  ['numeric_1305',['Numeric',['../class_client_protocol_1_1_messages_1_1_numeric.html',1,'ClientProtocol::Messages::Numeric'],['../class_numeric_1_1_numeric.html',1,'Numeric::Numeric']]]
+  ['manager_0',['Manager',['../class_cap_1_1_manager.html',1,'Cap::Manager'],['../class_d_n_s_1_1_manager.html',1,'DNS::Manager'],['../class_i_r_cv3_1_1_batch_1_1_manager.html',1,'IRCv3::Batch::Manager'],['../class_i_r_cv3_1_1_server_time_1_1_manager.html',1,'IRCv3::ServerTime::Manager']]],
+  ['map_5fpair_5fcompare_1',['map_pair_compare',['../classinsp_1_1detail_1_1map__pair__compare.html',1,'insp::detail']]],
+  ['map_5fvalue_5fcompare_2',['map_value_compare',['../classinsp_1_1detail_1_1map__value__compare.html',1,'insp::detail']]],
+  ['matcheventlistener_3',['MatchEventListener',['../class_who_1_1_match_event_listener.html',1,'Who']]],
+  ['membership_4',['Membership',['../class_membership.html',1,'']]],
+  ['message_5',['Message',['../class_client_protocol_1_1_message.html',1,'ClientProtocol']]],
+  ['messagebase_6',['MessageBase',['../class_cap_1_1_message_base.html',1,'Cap']]],
+  ['messagedetails_7',['MessageDetails',['../class_message_details.html',1,'']]],
+  ['messageeventlistener_8',['MessageEventListener',['../class_server_protocol_1_1_message_event_listener.html',1,'ServerProtocol']]],
+  ['messagesource_9',['MessageSource',['../class_client_protocol_1_1_message_source.html',1,'ClientProtocol']]],
+  ['messagetagdata_10',['MessageTagData',['../struct_client_protocol_1_1_message_tag_data.html',1,'ClientProtocol']]],
+  ['messagetagevent_11',['MessageTagEvent',['../class_client_protocol_1_1_message_tag_event.html',1,'ClientProtocol']]],
+  ['messagetagprovider_12',['MessageTagProvider',['../class_client_protocol_1_1_message_tag_provider.html',1,'ClientProtocol']]],
+  ['messagetarget_13',['MessageTarget',['../class_message_target.html',1,'']]],
+  ['mode_14',['Mode',['../class_client_protocol_1_1_events_1_1_mode.html',1,'ClientProtocol::Events::Mode'],['../class_client_protocol_1_1_messages_1_1_mode.html',1,'ClientProtocol::Messages::Mode']]],
+  ['modehandler_15',['ModeHandler',['../class_mode_handler.html',1,'']]],
+  ['modeparser_16',['ModeParser',['../class_mode_parser.html',1,'']]],
+  ['modewatcher_17',['ModeWatcher',['../class_mode_watcher.html',1,'']]],
+  ['modresult_18',['ModResult',['../class_mod_result.html',1,'']]],
+  ['module_19',['Module',['../class_module.html',1,'']]],
+  ['moduleeventlistener_20',['ModuleEventListener',['../class_events_1_1_module_event_listener.html',1,'Events']]],
+  ['moduleeventprovider_21',['ModuleEventProvider',['../class_events_1_1_module_event_provider.html',1,'Events']]],
+  ['moduleexception_22',['ModuleException',['../class_module_exception.html',1,'']]],
+  ['modulemanager_23',['ModuleManager',['../class_module_manager.html',1,'']]],
+  ['mutex_24',['Mutex',['../class_mutex.html',1,'']]]
 ];

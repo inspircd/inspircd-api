@@ -1,14 +1,8 @@
 var searchData=
 [
-  ['refcountbase_1328',['refcountbase',['../classrefcountbase.html',1,'']]],
-  ['reference_1329',['reference',['../classreference.html',1,'']]],
-  ['reference_3c_20configtag_20_3e_1330',['reference&lt; ConfigTag &gt;',['../classreference.html',1,'']]],
-  ['reference_3c_20connectclass_20_3e_1331',['reference&lt; ConnectClass &gt;',['../classreference.html',1,'']]],
-  ['reference_3c_20extensionitem_20_3e_1332',['reference&lt; ExtensionItem &gt;',['../classreference.html',1,'']]],
-  ['reference_3c_20iohookprovider_20_3e_1333',['reference&lt; IOHookProvider &gt;',['../classreference.html',1,'']]],
-  ['reference_3c_20module_20_3e_1334',['reference&lt; Module &gt;',['../classreference.html',1,'']]],
-  ['reference_3c_20operinfo_20_3e_1335',['reference&lt; OperInfo &gt;',['../classreference.html',1,'']]],
-  ['remoteuser_1336',['RemoteUser',['../class_remote_user.html',1,'']]],
-  ['rfcevents_1337',['RFCEvents',['../struct_client_protocol_1_1_r_f_c_events.html',1,'ClientProtocol']]],
-  ['routedescriptor_1338',['RouteDescriptor',['../struct_route_descriptor.html',1,'']]]
+  ['qline_0',['QLine',['../class_q_line.html',1,'']]],
+  ['query_1',['Query',['../struct_d_n_s_1_1_query.html',1,'DNS::Query'],['../class_s_q_l_1_1_query.html',1,'SQL::Query']]],
+  ['question_2',['Question',['../struct_d_n_s_1_1_question.html',1,'DNS']]],
+  ['queuedthread_3',['QueuedThread',['../class_queued_thread.html',1,'']]],
+  ['quit_4',['Quit',['../struct_client_protocol_1_1_messages_1_1_quit.html',1,'ClientProtocol::Messages']]]
 ];

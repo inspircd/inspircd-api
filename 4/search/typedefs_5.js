@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['operindex_2312',['OperIndex',['../class_server_config.html#a03f6cab79f8790700e869e0417b45c04',1,'ServerConfig']]],
-  ['operlist_2313',['OperList',['../class_user_manager.html#a6adfda52c28d572ba24aca18ee1bc7a9',1,'UserManager']]]
+  ['namemap_0',['NameMap',['../class_ext_ban_1_1_manager.html#a2f2e7a4449b2f0b8aac334d5399a00f3',1,'ExtBan::Manager']]]
 ];

@@ -1,4 +1,27 @@
 var searchData=
 [
-  ['join_1230',['Join',['../struct_client_protocol_1_1_events_1_1_join.html',1,'ClientProtocol::Events::Join'],['../class_client_protocol_1_1_messages_1_1_join.html',1,'ClientProtocol::Messages::Join']]]
+  ['insensitive_0',['insensitive',['../structirc_1_1insensitive.html',1,'irc']]],
+  ['insensitive_5fswo_1',['insensitive_swo',['../structirc_1_1insensitive__swo.html',1,'irc']]],
+  ['inspircd_2',['InspIRCd',['../class_insp_i_r_cd.html',1,'']]],
+  ['intextitem_3',['IntExtItem',['../class_int_ext_item.html',1,'']]],
+  ['intrusive_5flist_4',['intrusive_list',['../classinsp_1_1intrusive__list.html',1,'insp']]],
+  ['intrusive_5flist_3c_20localuser_20_3e_5',['intrusive_list&lt; LocalUser &gt;',['../classinsp_1_1intrusive__list.html',1,'insp']]],
+  ['intrusive_5flist_3c_20membership_20_3e_6',['intrusive_list&lt; Membership &gt;',['../classinsp_1_1intrusive__list.html',1,'insp']]],
+  ['intrusive_5flist_5fdef_5ftag_7',['intrusive_list_def_tag',['../structinsp_1_1intrusive__list__def__tag.html',1,'insp']]],
+  ['intrusive_5flist_5fnode_8',['intrusive_list_node',['../classinsp_1_1intrusive__list__node.html',1,'insp']]],
+  ['intrusive_5flist_5fnode_3c_20dynamic_5freference_5fbase_20_3e_9',['intrusive_list_node&lt; dynamic_reference_base &gt;',['../classinsp_1_1intrusive__list__node.html',1,'insp']]],
+  ['intrusive_5flist_5fnode_3c_20invite_2c_20channel_20_3e_10',['intrusive_list_node&lt; Invite, Channel &gt;',['../classinsp_1_1intrusive__list__node.html',1,'insp']]],
+  ['intrusive_5flist_5fnode_3c_20invite_2c_20localuser_20_3e_11',['intrusive_list_node&lt; Invite, LocalUser &gt;',['../classinsp_1_1intrusive__list__node.html',1,'insp']]],
+  ['intrusive_5flist_5fnode_3c_20localuser_20_3e_12',['intrusive_list_node&lt; LocalUser &gt;',['../classinsp_1_1intrusive__list__node.html',1,'insp']]],
+  ['intrusive_5flist_5fnode_3c_20membership_20_3e_13',['intrusive_list_node&lt; Membership &gt;',['../classinsp_1_1intrusive__list__node.html',1,'insp']]],
+  ['intrusive_5flist_5ftail_14',['intrusive_list_tail',['../classinsp_1_1intrusive__list__tail.html',1,'insp']]],
+  ['invalidmodeparameter_15',['InvalidModeParameter',['../class_numerics_1_1_invalid_mode_parameter.html',1,'Numerics']]],
+  ['invite_16',['Invite',['../struct_client_protocol_1_1_messages_1_1_invite.html',1,'ClientProtocol::Messages::Invite'],['../class_invite_1_1_invite.html',1,'Invite::Invite']]],
+  ['iohook_17',['IOHook',['../class_i_o_hook.html',1,'']]],
+  ['iohookmiddle_18',['IOHookMiddle',['../class_i_o_hook_middle.html',1,'']]],
+  ['iohookprovider_19',['IOHookProvider',['../class_i_o_hook_provider.html',1,'']]],
+  ['iohookprovref_20',['IOHookProvRef',['../class_listen_socket_1_1_i_o_hook_prov_ref.html',1,'ListenSocket']]],
+  ['iovec_21',['iovec',['../structiovec.html',1,'']]],
+  ['iterator_22',['iterator',['../classinsp_1_1intrusive__list_1_1iterator.html',1,'insp::intrusive_list']]],
+  ['iterator_5frange_23',['iterator_range',['../classinsp_1_1iterator__range.html',1,'insp']]]
 ];

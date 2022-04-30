@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['refcountbase_1284',['refcountbase',['../classrefcountbase.html',1,'']]],
-  ['reference_1285',['reference',['../classreference.html',1,'']]],
-  ['reference_3c_20module_20_3e_1286',['reference&lt; Module &gt;',['../classreference.html',1,'']]],
-  ['remoteuser_1287',['RemoteUser',['../class_remote_user.html',1,'']]],
-  ['result_1288',['Result',['../class_cullable_1_1_result.html',1,'Cullable']]],
-  ['rfcevents_1289',['RFCEvents',['../struct_client_protocol_1_1_r_f_c_events.html',1,'ClientProtocol']]],
-  ['routedescriptor_1290',['RouteDescriptor',['../class_route_descriptor.html',1,'']]]
+  ['qline_0',['QLine',['../class_q_line.html',1,'']]],
+  ['query_1',['Query',['../struct_d_n_s_1_1_query.html',1,'DNS::Query'],['../class_s_q_l_1_1_query.html',1,'SQL::Query']]],
+  ['question_2',['Question',['../struct_d_n_s_1_1_question.html',1,'DNS']]],
+  ['quit_3',['Quit',['../struct_client_protocol_1_1_messages_1_1_quit.html',1,'ClientProtocol::Messages']]]
 ];

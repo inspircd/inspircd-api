@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['servicelist_0',['ServiceList',['../class_user_manager.html#a5afbda0fae63d56707643846777318fe',1,'UserManager']]]
+  ['rank_0',['Rank',['../class_mode_handler.html#ac9aa6505f7bccf945c7d6251cacf6f5b',1,'ModeHandler']]]
 ];

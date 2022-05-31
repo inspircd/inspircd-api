@@ -12,7 +12,5 @@ var searchData=
   ['listitem_9',['ListItem',['../struct_list_mode_base_1_1_list_item.html',1,'ListModeBase']]],
   ['listmodebase_10',['ListModeBase',['../class_list_mode_base.html',1,'']]],
   ['localuser_11',['LocalUser',['../class_local_user.html',1,'']]],
-  ['location_12',['Location',['../class_geolocation_1_1_location.html',1,'Geolocation']]],
-  ['logmanager_13',['LogManager',['../class_log_manager.html',1,'']]],
-  ['logstream_14',['LogStream',['../class_log_stream.html',1,'']]]
+  ['location_12',['Location',['../class_geolocation_1_1_location.html',1,'Geolocation']]]
 ];

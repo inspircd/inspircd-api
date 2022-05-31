@@ -14,7 +14,7 @@ var searchData=
   ['ports_11',['ports',['../class_insp_i_r_cd.html#aa0a4dde92717cefd20f8996f02a5105e',1,'InspIRCd::ports()'],['../class_connect_class.html#a153a6fa97000cf1d491f3106c86a9d40',1,'ConnectClass::ports()']]],
   ['pos_12',['pos',['../classirc_1_1sepstream.html#abe1ff2ce6825f2d8834f7947f472ea39',1,'irc::sepstream']]],
   ['prefix_13',['prefix',['../class_prefix_mode.html#aa74ada9a22f366a84e9d78fc2ffecae1',1,'PrefixMode::prefix()'],['../class_mode_parser.html#a49ddb2851a8e5c28b0fbf391764fb65c',1,'ModeParser::prefix()']]],
-  ['prefixrank_14',['prefixrank',['../class_prefix_mode.html#a4c2b3ede03308513aa0ebdd7a0b1c649',1,'PrefixMode']]],
+  ['prefixrank_14',['prefixrank',['../class_prefix_mode.html#a34d415fad9d1c1e4cc830912c556edae',1,'PrefixMode']]],
   ['properties_15',['properties',['../class_module.html#a1385db0063f2caa0ebcd359a8b0330e1',1,'Module']]],
   ['prov_16',['prov',['../class_i_o_hook.html#a98c1834e84468781b99e15db6da91eaf',1,'IOHook']]]
 ];

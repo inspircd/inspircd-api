@@ -110,8 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9b01721f55bd31a004557bf6372fa86e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75a5dd40880fc77347686e13bac933dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mode_parser.html#a75a5dd40880fc77347686e13bac933dc">Process</a> (<a class="el" href="class_user.html">User</a> *user, <a class="el" href="class_channel.html">Channel</a> *targetchannel, <a class="el" href="class_user.html">User</a> *targetuser, <a class="el" href="class_modes_1_1_change_list.html">Modes::ChangeList</a> &amp;changelist, ModeProcessFlag flags=<a class="el" href="class_mode_parser.html#a910f3e7bf782ee7fb2b1a1b57a23588ba01b20347b43218a9b0504e0ace006914">MODE_NONE</a>)</td></tr>
 <tr class="separator:a75a5dd40880fc77347686e13bac933dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac56a147f81683814b8aef3c603f2faf8"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mode_parser.html#ac56a147f81683814b8aef3c603f2faf8">ProcessSingle</a> (<a class="el" href="class_user.html">User</a> *user, <a class="el" href="class_channel.html">Channel</a> *targetchannel, <a class="el" href="class_user.html">User</a> *targetuser, <a class="el" href="class_modes_1_1_change_list.html">Modes::ChangeList</a> &amp;changelist, ModeProcessFlag flags=<a class="el" href="class_mode_parser.html#a910f3e7bf782ee7fb2b1a1b57a23588ba01b20347b43218a9b0504e0ace006914">MODE_NONE</a>, unsigned int beginindex=0)</td></tr>
-<tr class="separator:ac56a147f81683814b8aef3c603f2faf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71718dffb45a5d5c8f6b78d867b0595d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mode_parser.html#a71718dffb45a5d5c8f6b78d867b0595d">ProcessSingle</a> (<a class="el" href="class_user.html">User</a> *user, <a class="el" href="class_channel.html">Channel</a> *targetchannel, <a class="el" href="class_user.html">User</a> *targetuser, <a class="el" href="class_modes_1_1_change_list.html">Modes::ChangeList</a> &amp;changelist, ModeProcessFlag flags=<a class="el" href="class_mode_parser.html#a910f3e7bf782ee7fb2b1a1b57a23588ba01b20347b43218a9b0504e0ace006914">MODE_NONE</a>, size_t beginindex=0)</td></tr>
+<tr class="separator:a71718dffb45a5d5c8f6b78d867b0595d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae330a6065f22f5e2824e4c20299e97f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mode_parser.html#ae330a6065f22f5e2824e4c20299e97f9">ModeParamsToChangeList</a> (<a class="el" href="class_user.html">User</a> *user, ModeType type, const std::vector&lt; std::string &gt; &amp;parameters, <a class="el" href="class_modes_1_1_change_list.html">Modes::ChangeList</a> &amp;changelist, size_t beginindex=1, size_t endindex=UINT_MAX)</td></tr>
 <tr class="separator:ae330a6065f22f5e2824e4c20299e97f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad46a48ed67169090d4d8d3052b81e1e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mode_handler.html">ModeHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mode_parser.html#ad46a48ed67169090d4d8d3052b81e1e5">FindMode</a> (const std::string &amp;modename, ModeType mt)</td></tr>
@@ -764,14 +764,14 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ac56a147f81683814b8aef3c603f2faf8" name="ac56a147f81683814b8aef3c603f2faf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac56a147f81683814b8aef3c603f2faf8">&#9670;&nbsp;</a></span>ProcessSingle()</h2>
+<a id="a71718dffb45a5d5c8f6b78d867b0595d" name="a71718dffb45a5d5c8f6b78d867b0595d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71718dffb45a5d5c8f6b78d867b0595d">&#9670;&nbsp;</a></span>ProcessSingle()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int ModeParser::ProcessSingle </td>
+          <td class="memname">size_t ModeParser::ProcessSingle </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_user.html">User</a> *&#160;</td>
           <td class="paramname"><em>user</em>, </td>
@@ -803,7 +803,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>beginindex</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>

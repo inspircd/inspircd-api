@@ -77,8 +77,12 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a04109a9e85850ff986e50eb599a7948e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_regex_1_1_match_collection.html#a04109a9e85850ff986e50eb599a7948e">MatchCollection</a> (const Captures &amp;c, const <a class="el" href="classinsp_1_1flat__map.html">NamedCaptures</a> &amp;nc)</td></tr>
 <tr class="separator:a04109a9e85850ff986e50eb599a7948e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab486e9874e86acbb00f10bcb3b259f90"><td class="memItemLeft" align="right" valign="top">const std::optional&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_regex_1_1_match_collection.html#ab486e9874e86acbb00f10bcb3b259f90">GetCapture</a> (size_t idx) const</td></tr>
+<tr class="separator:ab486e9874e86acbb00f10bcb3b259f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe8a53bf6d099cad9930d91f4830d536"><td class="memItemLeft" align="right" valign="top">const Captures &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_regex_1_1_match_collection.html#afe8a53bf6d099cad9930d91f4830d536">GetCaptures</a> () const</td></tr>
 <tr class="separator:afe8a53bf6d099cad9930d91f4830d536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9588d0ea1a0cb81075398e472eab5fed"><td class="memItemLeft" align="right" valign="top">const std::optional&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_regex_1_1_match_collection.html#a9588d0ea1a0cb81075398e472eab5fed">GetNamedCapture</a> (const std::string &amp;name) const</td></tr>
+<tr class="separator:a9588d0ea1a0cb81075398e472eab5fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a989b5b7e646baff105471f6e6d0315"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classinsp_1_1flat__map.html">NamedCaptures</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_regex_1_1_match_collection.html#a8a989b5b7e646baff105471f6e6d0315">GetNamedCaptures</a> () const</td></tr>
 <tr class="separator:a8a989b5b7e646baff105471f6e6d0315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -127,6 +131,38 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab486e9874e86acbb00f10bcb3b259f90" name="ab486e9874e86acbb00f10bcb3b259f90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab486e9874e86acbb00f10bcb3b259f90">&#9670;&nbsp;</a></span>GetCapture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::optional&lt; std::string &gt; Regex::MatchCollection::GetCapture </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Retrieves a specific captured substring by index. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td>The index of the captured substring to return. The requested captured substring or std::nullopt if it does not exist. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="afe8a53bf6d099cad9930d91f4830d536" name="afe8a53bf6d099cad9930d91f4830d536"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe8a53bf6d099cad9930d91f4830d536">&#9670;&nbsp;</a></span>GetCaptures()</h2>
 
@@ -150,6 +186,38 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >Retrieves the substrings that were captured. </p>
+
+</div>
+</div>
+<a id="a9588d0ea1a0cb81075398e472eab5fed" name="a9588d0ea1a0cb81075398e472eab5fed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9588d0ea1a0cb81075398e472eab5fed">&#9670;&nbsp;</a></span>GetNamedCapture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::optional&lt; std::string &gt; Regex::MatchCollection::GetNamedCapture </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Retrieves a specific captured substring by index. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the captured substring to return. The requested captured substring or std::nullopt if it does not exist. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

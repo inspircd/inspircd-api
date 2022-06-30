@@ -19,7 +19,7 @@ var searchData=
   ['processbuffer_16',['ProcessBuffer',['../class_command_parser.html#a82a599fc2bd780188bf5dfb3afdbee0b',1,'CommandParser']]],
   ['processcolors_17',['ProcessColors',['../class_insp_i_r_cd.html#abd280dc940a1c3a34671967a908ea296',1,'InspIRCd']]],
   ['processcommand_18',['ProcessCommand',['../class_command_parser.html#a348d2bdc5a4bc0479c40647ecfe97b4d',1,'CommandParser']]],
-  ['processsingle_19',['ProcessSingle',['../class_mode_parser.html#ac56a147f81683814b8aef3c603f2faf8',1,'ModeParser']]],
+  ['processsingle_19',['ProcessSingle',['../class_mode_parser.html#a71718dffb45a5d5c8f6b78d867b0595d',1,'ModeParser']]],
   ['purgeemptychannels_20',['PurgeEmptyChannels',['../class_user.html#a03321870943c66415b14404e31128090',1,'User']]],
   ['push_21',['push',['../class_modes_1_1_change_list.html#ac2cb1e0774e66bc456c5a95f001f34e9',1,'Modes::ChangeList::push()'],['../class_numeric_1_1_numeric.html#a81b9e27c062591090835d34dafebd1f0',1,'Numeric::Numeric::push()'],['../class_modes_1_1_change_list.html#a72a6b93eb9fb57ef6e68d8bcc33789ad',1,'Modes::ChangeList::push(Args &amp;&amp;... args)'],['../class_modes_1_1_change_list.html#af51a8b3f138e2d23f4568f5e20f77a6f',1,'Modes::ChangeList::push(List::const_iterator first, List::const_iterator last)']]],
   ['push_5fadd_22',['push_add',['../class_modes_1_1_change_list.html#ac7f796d2e8f9c6449b62acfaeb7c7c64',1,'Modes::ChangeList']]],

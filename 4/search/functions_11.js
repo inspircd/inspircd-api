@@ -15,7 +15,7 @@ var searchData=
   ['registerservices_12',['RegisterServices',['../class_log_1_1_manager.html#ae1014f702e8f3b9cb4cc96adbad2b73c',1,'Log::Manager']]],
   ['rehash_13',['Rehash',['../class_insp_i_r_cd.html#a3aad7e6eb07094aa3f6edbba1b3d1d50',1,'InspIRCd']]],
   ['rehashclonecounts_14',['RehashCloneCounts',['../class_user_manager.html#ae593f5c04e3e33e47e593804537a705a',1,'UserManager']]],
-  ['remove_15',['Remove',['../class_invite_1_1_a_p_i_base.html#aec2f75887b33b8910680d9f555a2da48',1,'Invite::APIBase::Remove()'],['../class_token_list.html#a3d052df67af7e07143b766dacf3f0da3',1,'TokenList::Remove()']]],
+  ['remove_15',['Remove',['../class_token_list.html#a3d052df67af7e07143b766dacf3f0da3',1,'TokenList::Remove()'],['../class_invite_1_1_a_p_i_base.html#aec2f75887b33b8910680d9f555a2da48',1,'Invite::APIBase::Remove()']]],
   ['removeclonecounts_16',['RemoveCloneCounts',['../class_user_manager.html#a856c75fc342befd33ba9928b9fda7e61',1,'UserManager']]],
   ['removecommand_17',['RemoveCommand',['../class_command_parser.html#a2d3c5995f2cd122b66ff9be652be04d6',1,'CommandParser']]],
   ['removeentries_18',['RemoveEntries',['../class_ban_cache_manager.html#a6a5570cba4d841b0561ace1cef71ed43',1,'BanCacheManager']]],

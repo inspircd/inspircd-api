@@ -13,8 +13,8 @@ var searchData=
   ['topic_10',['topic',['../class_channel.html#aabf950297869ac3f7126ae892fe68dfb',1,'Channel']]],
   ['topicset_11',['topicset',['../class_channel.html#a11deedd3d2c8191b074eb2b3741eb246',1,'Channel']]],
   ['translation_12',['translation',['../class_command_base.html#a196781288c603e97eab9b778ee892bc3',1,'CommandBase']]],
-  ['type_13',['Type',['../class_ban_cache_hit.html#a939971a100423882923c077738b1604a',1,'BanCacheHit']]],
-  ['type_14',['type',['../class_route_descriptor.html#abd13190f6efb3fd518820d2014c05ee6',1,'RouteDescriptor::type()'],['../class_message_details.html#a4193077c74ccc17c8958769b07bc78fe',1,'MessageDetails::type()'],['../class_message_target.html#aaf61ca8184fdd2cfeaf657beab45df5f',1,'MessageTarget::type()'],['../structirc_1_1sockets_1_1cidr__mask.html#a1fd5428bb9287bf794b1a99762718cf5',1,'irc::sockets::cidr_mask::type()'],['../class_connect_class.html#a7ae29107602f11962065654ad76364fd',1,'ConnectClass::type()'],['../class_x_line.html#a9e07f2871413be0c84634906c7c0d801',1,'XLine::type()']]],
+  ['type_13',['type',['../class_route_descriptor.html#abd13190f6efb3fd518820d2014c05ee6',1,'RouteDescriptor::type()'],['../class_message_details.html#a4193077c74ccc17c8958769b07bc78fe',1,'MessageDetails::type()'],['../class_message_target.html#aaf61ca8184fdd2cfeaf657beab45df5f',1,'MessageTarget::type()'],['../structirc_1_1sockets_1_1cidr__mask.html#a1fd5428bb9287bf794b1a99762718cf5',1,'irc::sockets::cidr_mask::type()'],['../class_connect_class.html#a7ae29107602f11962065654ad76364fd',1,'ConnectClass::type()'],['../class_x_line.html#a9e07f2871413be0c84634906c7c0d801',1,'XLine::type()']]],
+  ['type_14',['Type',['../class_ban_cache_hit.html#a939971a100423882923c077738b1604a',1,'BanCacheHit']]],
   ['type_5fblock_15',['type_block',['../class_oper_info.html#a43accffb4991f01b7409ebf9e19a9f4a',1,'OperInfo']]],
   ['type_5fid_16',['type_id',['../class_mode_handler.html#ac1dc48ffec01df55b588c1da8d2b9c41',1,'ModeHandler']]]
 ];

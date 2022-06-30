@@ -28,7 +28,7 @@ var searchData=
   ['cleanmask_25',['CleanMask',['../class_mode_parser.html#a63235bd8f49dc7be521d29ee6758d959',1,'ModeParser']]],
   ['cleanup_26',['Cleanup',['../class_insp_i_r_cd.html#a49da70179340ee0c02a3d00d6539c639',1,'InspIRCd']]],
   ['clear_27',['clear',['../class_stream_socket_1_1_send_queue.html#a45534f2ac66c83763c3481cd7e61aed7',1,'StreamSocket::SendQueue::clear()'],['../class_modes_1_1_change_list.html#a572e4a7a85a6b958455ddb177168fbc3',1,'Modes::ChangeList::clear()']]],
-  ['clear_28',['Clear',['../class_h_t_t_p_headers.html#aaa2826bdbaf64011a2ef6d25206c71ab',1,'HTTPHeaders::Clear()'],['../class_token_list.html#ab1f678c474f00893f7af4dce182a4d9f',1,'TokenList::Clear()']]],
+  ['clear_28',['Clear',['../class_token_list.html#ab1f678c474f00893f7af4dce182a4d9f',1,'TokenList::Clear()'],['../class_h_t_t_p_headers.html#aaa2826bdbaf64011a2ef6d25206c71ab',1,'HTTPHeaders::Clear()']]],
   ['clearparams_29',['ClearParams',['../class_client_protocol_1_1_message.html#a705ce2c1a0ccf7b00d69c9395860800e',1,'ClientProtocol::Message']]],
   ['close_30',['Close',['../class_socket_engine.html#a15daa85794e48c934ed074d54365140c',1,'SocketEngine::Close(int fd)'],['../class_socket_engine.html#a09799c01dfd3d5236ff10cc68b86af5f',1,'SocketEngine::Close(EventHandler *eh)'],['../class_stream_socket.html#aae0f8b64d2c232f5bb0226e52b177480',1,'StreamSocket::Close()'],['../class_stream_socket.html#a6032238bc99708507548fdb5f59d5e23',1,'StreamSocket::Close(bool writeblock)']]],
   ['closelogs_31',['CloseLogs',['../class_log_1_1_manager.html#a1c51ad82e914fc440f77b141bc306d3c',1,'Log::Manager']]],

@@ -5,7 +5,7 @@ var searchData=
   ['accesscheck_2',['AccessCheck',['../class_mode_handler.html#a2e88277fad9a2214b729f78efe09ed47',1,'ModeHandler::AccessCheck()'],['../class_prefix_mode.html#a56d2703856234bf2ac95106d786627c6',1,'PrefixMode::AccessCheck()']]],
   ['acting_3',['Acting',['../class_ext_ban_1_1_acting.html#affdd642ba492d1c14bca037381a9734c',1,'ExtBan::Acting']]],
   ['add_4',['add',['../class_reload_module_1_1_custom_data.html#a585e155c79dc2c39f231999c0665510c',1,'ReloadModule::CustomData']]],
-  ['add_5',['Add',['../class_l_d_a_p_provider.html#a6f68f321fcceb5f348a8415410da2927',1,'LDAPProvider::Add()'],['../class_token_list.html#a78d4284016d9c55f793687825d925a48',1,'TokenList::Add()']]],
+  ['add_5',['Add',['../class_token_list.html#a78d4284016d9c55f793687825d925a48',1,'TokenList::Add()'],['../class_l_d_a_p_provider.html#a6f68f321fcceb5f348a8415410da2927',1,'LDAPProvider::Add()']]],
   ['addaction_6',['AddAction',['../class_action_list.html#a7594c3139156c56a7a70f50cc88f4a12',1,'ActionList']]],
   ['addcap_7',['AddCap',['../class_cap_1_1_manager.html#a7ed0035b183b215c7089a8876b919d7e',1,'Cap::Manager']]],
   ['addclone_8',['AddClone',['../class_user_manager.html#ae2dce76ceca3f650d19a7591a8fe8535',1,'UserManager']]],

@@ -91,53 +91,99 @@ $(function() {
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;numerics.h&quot;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span>Numeric</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">class </span><a class="code hl_function" href="class_numeric_1_1_numeric.html#ac4550b522e559744210ac5581b52d2aa">Numeric</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_numeric_1_1_numeric.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="class_numeric_1_1_numeric.html">Numeric::Numeric</a></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numeric;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_class" href="class_command_base_1_1_params.html">CommandBase::Params</a> params;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <a class="code hl_class" href="class_server.html">Server</a>* sourceserver = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_numeric_1_1_numeric.html#ac4550b522e559744210ac5581b52d2aa">   48</a></span>        <a class="code hl_function" href="class_numeric_1_1_numeric.html#ac4550b522e559744210ac5581b52d2aa">Numeric</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> num)</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                : numeric(num)</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_numeric_1_1_numeric.html#a81b9e27c062591090835d34dafebd1f0">   57</a></span>        <a class="code hl_class" href="class_numeric_1_1_numeric.html">Numeric</a>&amp; <a class="code hl_function" href="class_numeric_1_1_numeric.html#a81b9e27c062591090835d34dafebd1f0">push</a>(<span class="keyword">const</span> Args&amp;... args)</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                (params.push_back(ConvToStr(args)), ...);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// These numerics are used in multiple source files.</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">enum</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="comment">// From RFC 1459</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        RPL_LUSEROP = 252,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        RPL_AWAY = 301,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        RPL_LISTSTART = 321,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        RPL_LIST = 322,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        RPL_LISTEND = 323,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        RPL_VERSION = 351,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        RPL_LINKS = 364,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        RPL_ENDOFLINKS = 365,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        ERR_NOSUCHNICK = 401,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        ERR_NOSUCHCHANNEL = 403,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        ERR_NORECIPIENT = 411,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        ERR_NOTEXTTOSEND = 412,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        ERR_UNKNOWNCOMMAND = 421,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        ERR_ERRONEUSNICKNAME = 432,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        ERR_NOTONCHANNEL = 442,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        ERR_YOUREBANNEDCREEP = 465,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        ERR_UNKNOWNMODE = 472,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        ERR_BANNEDFROMCHAN = 474,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        ERR_BADCHANMASK = 476,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        ERR_NOPRIVILEGES = 481,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        ERR_CHANOPRIVSNEEDED = 482,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        ERR_NOOPERHOST = 491,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="comment">// From RFC 2812.</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        ERR_NOSUCHSERVER = 402,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        ERR_NOSUCHSERVICE = 408,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        ERR_UNAVAILRESOURCE = 437,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        ERR_BANLISTFULL = 478,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        ERR_RESTRICTED = 484,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="comment">// From irc2?</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        RPL_SAVENICK = 43,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="comment">// From UnrealIRCd.</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        ERR_CANTCHANGENICK = 447,</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="class_numeric_1_1_numeric.html#a2bd7f0c1236dfb7b4433dc1a4c64ca50">   66</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_numeric_1_1_numeric.html#a2bd7f0c1236dfb7b4433dc1a4c64ca50">SetServer</a>(<a class="code hl_class" href="class_server.html">Server</a>* server) { sourceserver = server; }</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_numeric_1_1_numeric.html#a79645dac8c9979766512e65015817f95">   71</a></span>        <a class="code hl_class" href="class_server.html">Server</a>* <a class="code hl_function" href="class_numeric_1_1_numeric.html#a79645dac8c9979766512e65015817f95">GetServer</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> sourceserver; }</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_numeric_1_1_numeric.html#aed7fa51e7a7e7341d645019415530b3d">   76</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_numeric_1_1_numeric.html#aed7fa51e7a7e7341d645019415530b3d">GetNumeric</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> numeric; }</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_numeric_1_1_numeric.html#a8852518dcc31a3353df39dec1f192012">   81</a></span>        <span class="keyword">const</span> <a class="code hl_class" href="class_command_base_1_1_params.html">CommandBase::Params</a>&amp; <a class="code hl_function" href="class_numeric_1_1_numeric.html#a8852518dcc31a3353df39dec1f192012">GetParams</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> params; }</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_numeric_1_1_numeric.html#ac0446577c4021dc38062ba8b1bef7f6f">   86</a></span>        <a class="code hl_class" href="class_command_base_1_1_params.html">CommandBase::Params</a>&amp; <a class="code hl_function" href="class_numeric_1_1_numeric.html#ac0446577c4021dc38062ba8b1bef7f6f">GetParams</a>() { <span class="keywordflow">return</span> params; }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>};</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="comment">// InspIRCd-specific.</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        ERR_UNKNOWNSNOMASK = 501,</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        ERR_CANTUNLOADMODULE = 972,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        RPL_UNLOADEDMODULE = 973,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        ERR_CANTLOADMODULE = 974,</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        RPL_LOADEDMODULE = 975,</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>};</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">namespace </span>Numeric</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keyword">class </span><a class="code hl_function" href="class_numeric_1_1_numeric.html#ac4550b522e559744210ac5581b52d2aa">Numeric</a>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_numeric_1_1_numeric.html">   76</a></span><span class="keyword">class </span><a class="code hl_class" href="class_numeric_1_1_numeric.html">Numeric::Numeric</a></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>{</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numeric;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <a class="code hl_class" href="class_command_base_1_1_params.html">CommandBase::Params</a> params;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <a class="code hl_class" href="class_server.html">Server</a>* sourceserver = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_numeric_1_1_numeric.html#ac4550b522e559744210ac5581b52d2aa">   94</a></span>        <a class="code hl_function" href="class_numeric_1_1_numeric.html#ac4550b522e559744210ac5581b52d2aa">Numeric</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> num)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                : numeric(num)</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="class_numeric_1_1_numeric.html#a81b9e27c062591090835d34dafebd1f0">  103</a></span>        <a class="code hl_class" href="class_numeric_1_1_numeric.html">Numeric</a>&amp; <a class="code hl_function" href="class_numeric_1_1_numeric.html#a81b9e27c062591090835d34dafebd1f0">push</a>(<span class="keyword">const</span> Args&amp;... args)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                (params.push_back(ConvToStr(args)), ...);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="class_numeric_1_1_numeric.html#a2bd7f0c1236dfb7b4433dc1a4c64ca50">  112</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_numeric_1_1_numeric.html#a2bd7f0c1236dfb7b4433dc1a4c64ca50">SetServer</a>(<a class="code hl_class" href="class_server.html">Server</a>* server) { sourceserver = server; }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="class_numeric_1_1_numeric.html#a79645dac8c9979766512e65015817f95">  117</a></span>        <a class="code hl_class" href="class_server.html">Server</a>* <a class="code hl_function" href="class_numeric_1_1_numeric.html#a79645dac8c9979766512e65015817f95">GetServer</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> sourceserver; }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="class_numeric_1_1_numeric.html#aed7fa51e7a7e7341d645019415530b3d">  122</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_numeric_1_1_numeric.html#aed7fa51e7a7e7341d645019415530b3d">GetNumeric</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> numeric; }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="class_numeric_1_1_numeric.html#a8852518dcc31a3353df39dec1f192012">  127</a></span>        <span class="keyword">const</span> <a class="code hl_class" href="class_command_base_1_1_params.html">CommandBase::Params</a>&amp; <a class="code hl_function" href="class_numeric_1_1_numeric.html#a8852518dcc31a3353df39dec1f192012">GetParams</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> params; }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="class_numeric_1_1_numeric.html#ac0446577c4021dc38062ba8b1bef7f6f">  132</a></span>        <a class="code hl_class" href="class_command_base_1_1_params.html">CommandBase::Params</a>&amp; <a class="code hl_function" href="class_numeric_1_1_numeric.html#ac0446577c4021dc38062ba8b1bef7f6f">GetParams</a>() { <span class="keywordflow">return</span> params; }</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>};</div>
 <div class="ttc" id="aclass_command_base_1_1_params_html"><div class="ttname"><a href="class_command_base_1_1_params.html">CommandBase::Params</a></div><div class="ttdef"><b>Definition:</b> ctables.h:147</div></div>
-<div class="ttc" id="aclass_numeric_1_1_numeric_html"><div class="ttname"><a href="class_numeric_1_1_numeric.html">Numeric::Numeric</a></div><div class="ttdef"><b>Definition:</b> numeric.h:31</div></div>
-<div class="ttc" id="aclass_numeric_1_1_numeric_html_a2bd7f0c1236dfb7b4433dc1a4c64ca50"><div class="ttname"><a href="class_numeric_1_1_numeric.html#a2bd7f0c1236dfb7b4433dc1a4c64ca50">Numeric::Numeric::SetServer</a></div><div class="ttdeci">void SetServer(Server *server)</div><div class="ttdef"><b>Definition:</b> numeric.h:66</div></div>
-<div class="ttc" id="aclass_numeric_1_1_numeric_html_a79645dac8c9979766512e65015817f95"><div class="ttname"><a href="class_numeric_1_1_numeric.html#a79645dac8c9979766512e65015817f95">Numeric::Numeric::GetServer</a></div><div class="ttdeci">Server * GetServer() const</div><div class="ttdef"><b>Definition:</b> numeric.h:71</div></div>
-<div class="ttc" id="aclass_numeric_1_1_numeric_html_a81b9e27c062591090835d34dafebd1f0"><div class="ttname"><a href="class_numeric_1_1_numeric.html#a81b9e27c062591090835d34dafebd1f0">Numeric::Numeric::push</a></div><div class="ttdeci">Numeric &amp; push(const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> numeric.h:57</div></div>
-<div class="ttc" id="aclass_numeric_1_1_numeric_html_a8852518dcc31a3353df39dec1f192012"><div class="ttname"><a href="class_numeric_1_1_numeric.html#a8852518dcc31a3353df39dec1f192012">Numeric::Numeric::GetParams</a></div><div class="ttdeci">const CommandBase::Params &amp; GetParams() const</div><div class="ttdef"><b>Definition:</b> numeric.h:81</div></div>
-<div class="ttc" id="aclass_numeric_1_1_numeric_html_ac0446577c4021dc38062ba8b1bef7f6f"><div class="ttname"><a href="class_numeric_1_1_numeric.html#ac0446577c4021dc38062ba8b1bef7f6f">Numeric::Numeric::GetParams</a></div><div class="ttdeci">CommandBase::Params &amp; GetParams()</div><div class="ttdef"><b>Definition:</b> numeric.h:86</div></div>
-<div class="ttc" id="aclass_numeric_1_1_numeric_html_ac4550b522e559744210ac5581b52d2aa"><div class="ttname"><a href="class_numeric_1_1_numeric.html#ac4550b522e559744210ac5581b52d2aa">Numeric::Numeric::Numeric</a></div><div class="ttdeci">Numeric(unsigned int num)</div><div class="ttdef"><b>Definition:</b> numeric.h:48</div></div>
-<div class="ttc" id="aclass_numeric_1_1_numeric_html_aed7fa51e7a7e7341d645019415530b3d"><div class="ttname"><a href="class_numeric_1_1_numeric.html#aed7fa51e7a7e7341d645019415530b3d">Numeric::Numeric::GetNumeric</a></div><div class="ttdeci">unsigned int GetNumeric() const</div><div class="ttdef"><b>Definition:</b> numeric.h:76</div></div>
+<div class="ttc" id="aclass_numeric_1_1_numeric_html"><div class="ttname"><a href="class_numeric_1_1_numeric.html">Numeric::Numeric</a></div><div class="ttdef"><b>Definition:</b> numeric.h:77</div></div>
+<div class="ttc" id="aclass_numeric_1_1_numeric_html_a2bd7f0c1236dfb7b4433dc1a4c64ca50"><div class="ttname"><a href="class_numeric_1_1_numeric.html#a2bd7f0c1236dfb7b4433dc1a4c64ca50">Numeric::Numeric::SetServer</a></div><div class="ttdeci">void SetServer(Server *server)</div><div class="ttdef"><b>Definition:</b> numeric.h:112</div></div>
+<div class="ttc" id="aclass_numeric_1_1_numeric_html_a79645dac8c9979766512e65015817f95"><div class="ttname"><a href="class_numeric_1_1_numeric.html#a79645dac8c9979766512e65015817f95">Numeric::Numeric::GetServer</a></div><div class="ttdeci">Server * GetServer() const</div><div class="ttdef"><b>Definition:</b> numeric.h:117</div></div>
+<div class="ttc" id="aclass_numeric_1_1_numeric_html_a81b9e27c062591090835d34dafebd1f0"><div class="ttname"><a href="class_numeric_1_1_numeric.html#a81b9e27c062591090835d34dafebd1f0">Numeric::Numeric::push</a></div><div class="ttdeci">Numeric &amp; push(const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> numeric.h:103</div></div>
+<div class="ttc" id="aclass_numeric_1_1_numeric_html_a8852518dcc31a3353df39dec1f192012"><div class="ttname"><a href="class_numeric_1_1_numeric.html#a8852518dcc31a3353df39dec1f192012">Numeric::Numeric::GetParams</a></div><div class="ttdeci">const CommandBase::Params &amp; GetParams() const</div><div class="ttdef"><b>Definition:</b> numeric.h:127</div></div>
+<div class="ttc" id="aclass_numeric_1_1_numeric_html_ac0446577c4021dc38062ba8b1bef7f6f"><div class="ttname"><a href="class_numeric_1_1_numeric.html#ac0446577c4021dc38062ba8b1bef7f6f">Numeric::Numeric::GetParams</a></div><div class="ttdeci">CommandBase::Params &amp; GetParams()</div><div class="ttdef"><b>Definition:</b> numeric.h:132</div></div>
+<div class="ttc" id="aclass_numeric_1_1_numeric_html_ac4550b522e559744210ac5581b52d2aa"><div class="ttname"><a href="class_numeric_1_1_numeric.html#ac4550b522e559744210ac5581b52d2aa">Numeric::Numeric::Numeric</a></div><div class="ttdeci">Numeric(unsigned int num)</div><div class="ttdef"><b>Definition:</b> numeric.h:94</div></div>
+<div class="ttc" id="aclass_numeric_1_1_numeric_html_aed7fa51e7a7e7341d645019415530b3d"><div class="ttname"><a href="class_numeric_1_1_numeric.html#aed7fa51e7a7e7341d645019415530b3d">Numeric::Numeric::GetNumeric</a></div><div class="ttdeci">unsigned int GetNumeric() const</div><div class="ttdef"><b>Definition:</b> numeric.h:122</div></div>
 <div class="ttc" id="aclass_server_html"><div class="ttname"><a href="class_server.html">Server</a></div><div class="ttdef"><b>Definition:</b> server.h:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

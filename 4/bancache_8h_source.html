@@ -110,7 +110,7 @@ $(function() {
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_ban_cache_manager.html">   55</a></span><span class="keyword">class </span>CoreExport <a class="code hl_class" href="class_ban_cache_manager.html">BanCacheManager</a> final</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keyword">typedef</span> std::unordered_map&lt;std::string, BanCacheHit*, std::hash&lt;std::string&gt; &gt; BanCacheHash;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keyword">typedef</span> std::unordered_map&lt;std::string, BanCacheHit*&gt; BanCacheHash;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        BanCacheHash BanHash;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordtype">bool</span> RemoveIfExpired(BanCacheHash::iterator&amp; it);</div>

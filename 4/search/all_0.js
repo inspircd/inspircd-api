@@ -7,7 +7,7 @@ var searchData=
   ['acting_4',['Acting',['../class_ext_ban_1_1_acting.html#affdd642ba492d1c14bca037381a9734c',1,'ExtBan::Acting::Acting()'],['../class_ext_ban_1_1_acting.html',1,'ExtBan::Acting']]],
   ['actionbase_5',['ActionBase',['../class_action_base.html',1,'']]],
   ['actionlist_6',['ActionList',['../class_action_list.html',1,'']]],
-  ['add_7',['Add',['../class_token_list.html#a78d4284016d9c55f793687825d925a48',1,'TokenList::Add()'],['../class_l_d_a_p_provider.html#a6f68f321fcceb5f348a8415410da2927',1,'LDAPProvider::Add()']]],
+  ['add_7',['Add',['../class_l_d_a_p_provider.html#a6f68f321fcceb5f348a8415410da2927',1,'LDAPProvider::Add()'],['../class_token_list.html#a78d4284016d9c55f793687825d925a48',1,'TokenList::Add()']]],
   ['add_8',['add',['../class_reload_module_1_1_custom_data.html#a585e155c79dc2c39f231999c0665510c',1,'ReloadModule::CustomData']]],
   ['addaction_9',['AddAction',['../class_action_list.html#a7594c3139156c56a7a70f50cc88f4a12',1,'ActionList']]],
   ['addcap_10',['AddCap',['../class_cap_1_1_manager.html#a7ed0035b183b215c7089a8876b919d7e',1,'Cap::Manager']]],
